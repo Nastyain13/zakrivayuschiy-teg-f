@@ -19,9 +19,10 @@
   
   linear-gradient(
     180deg,
-    #e7e7e7 
+    #e7e7e7, 
     #1a1a1a 0.01%
   );  
+
   --bg-color: #FFFFFF;
    --text-font: "Inter", sans-serif;
   --accent-text-font: "Press Start 2P", sans-serif;

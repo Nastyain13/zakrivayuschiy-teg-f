@@ -18,6 +18,7 @@
   background-image: var(--bg-image);
   background-size: cover;
   background-attachment: fixed;
+  font-variation-settings: 'wght' var(--main-weight);
 }
 
 .header {
@@ -101,13 +102,19 @@
     1px 0 var(--bg-color), 0 -2px var(--bg-color);
 }
 
+@supports (-webkit-text-stroke: 1px var(--bg-color)) {
+  .card__image-label {
+    text-shadow: none;
+    -webkit-text-stroke: 1px var(--bg-color);
+  }
+}
+
 .image {
   display: flex;
   object-fit: cover;
   block-size: auto;
   object-position: center;
   inline-size: 100%;
-  object-fit: cover;
 }
 
 .filter-grayscale {
@@ -159,7 +166,6 @@
 
 .button::before {
   content: "";
-  position: absolute;
   position: absolute;
   top: 0;
   left: 0;
