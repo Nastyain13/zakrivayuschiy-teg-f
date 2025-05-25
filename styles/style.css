@@ -62,7 +62,7 @@
   color: var(--contour);
   font-family: var(--text-font);
   font-size: 18px;
-  font-weight: var(--title-weight);
+  font-variation-settings: 'wght' var(--title-weight);
   line-height: 100%;
   margin-left: 10px;
   padding-bottom: 3px;
@@ -286,4 +286,9 @@
 .dialog-window__button {
   text-transform: uppercase;
   inline-size: 100%;
+}
+@media (width < 375px) {
+	.page__button {
+		flex-direction: column;
+	}
 }
