@@ -20,7 +20,7 @@
   <body class="page">
     <header class="header">
       <h1 class="header__title">&lt;/html&gt;</h1>
-      <p class="header__text">закрывающий тег</p>
+      <h1 class="header__text">закрывающий тег</h1>
     </header>
     <main>
       <section class="card">
@@ -512,24 +512,24 @@
           </button>
         </div>
       </section>
-      <footer class="footer">
+      <div class="button__container">
         <button
-          class="button footer__button"
+          class="button main__button"
           onclick="window['dialog-content'].showModal()"
           type="button"
         >
-          <img
-            src="svg/floppy.svg"
-            alt="Диск"
-            class="button__icon floppy-icon"
-          />
-          <span class="footer__button-text">Сохранить на память</span>
+           <svg class=".dialog-content__icon" width="21" height="21">
+    <use href="./svg/floppy.svg#floppy"></use>
+  </svg>
+          <span class="button__text">Сохранить на память</span>
           <span class="visually-hidden">Показать меню</span>
         </button>
-      </footer>
+      </div>
       <dialog class="dialog-content" id="dialog-content">
         <div class="dialog-window__content">
-          <img src="svg/floppy.svg" alt="Диск" class="dialog-content__icon" />
+          <svg class="dialog-content__icon" viewBox="0 0 40 40">
+    <use href="./svg/floppy.svg#floppy"></use>
+  </svg>
           <p class="dialog-window__text">Вставьте дискету, чтобы продолжить</p>
         </div>
         <button
@@ -537,7 +537,7 @@
           onclick="window['dialog-content'].close()"
           type="button"
         >
-          <span class="dialog__button-text">ок</span>
+          <span class="button__text">ок</span>
         </button>
       </dialog>
     </main>
